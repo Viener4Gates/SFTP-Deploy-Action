@@ -19,7 +19,7 @@ if [ -z != ${10} ]; then
 
 	if test $9 == "true";then
   		echo 'Start delete remote files'
-		sshpass -p ${10} ssh -o StrictHostKeyChecking=no -p $3 $1@$2 del /s $6
+		sshpass -p ${10} ssh -o StrictHostKeyChecking=no -p $3 $1@$2 del /q /s $6
 	fi
 	if test $7 = "true"; then
   		echo "Connection via sftp protocol only, skip the command to create a directory"

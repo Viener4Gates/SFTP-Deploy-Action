@@ -25,7 +25,7 @@ if [ -z != ${10} ]; then
   		echo "Connection via sftp protocol only, skip the command to create a directory"
 	else
  	 	echo 'Create directory if needed'
- 	 	sshpass -p ${10} ssh -o StrictHostKeyChecking=no -p $3 $1@$2 mkdir -p $6
+ 	 	sshpass -p ${10} ssh -o StrictHostKeyChecking=no -p $3 $1@$2 mkdir $6
 	fi
 
 	echo 'SFTP Start'
